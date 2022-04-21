@@ -1,31 +1,29 @@
 function App() {
 
-  const frase = "Olá mundo, em uma string!";
-  const vetor = [0, 1, 2, 3, 4, 5, "ola"];
+  const pessoa = {
+    nome: "Hugo",
+    idade: 19
+  };
 
-  function clicou() {
-    vetor.forEach((elemento) => {
-      elemento += " :)";
-      console.log(elemento);
-    })
-  }
+  let chaves = Object.keys(pessoa);
+  console.log(chaves);
 
-  function dobra() {
-    var novoVetor = vetor.map((elemento) => {
-      return elemento*2;
+  function imprime() {
+    chaves.forEach((elemento) => {
+      console.log(pessoa[elemento]);
     });
 
-    console.log(novoVetor);
+    console.log(pessoa);
+    pessoa.pets = ["Lulu", "Kate", "Marry"];
+    console.log(pessoa);
   }
 
   return (
     <div>
-      <h1>Olá mundo!</h1>
-      <h1>{frase}</h1>
+      <h1>Olá {pessoa.nome}</h1>
       <Title></Title>
-      {vetor[2]}
-      <button onClick = { () => clicou() }>Oi</button>
-      <button onClick = { () => dobra()}>Oi, novo vetor</button>
+      {chaves}
+      <button onClick={() => {imprime()}}>Clique aqui!</button>
     </div>
   );
 }
