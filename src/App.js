@@ -1,17 +1,31 @@
 function App() {
 
   const frase = "Olá mundo, em uma string!";
+  const vetor = [0, 1, 2, 3, 4, 5, "ola"];
 
-  function alertClick(mensagem) {
-    alert(mensagem);
+  function clicou() {
+    vetor.forEach((elemento) => {
+      elemento += " :)";
+      console.log(elemento);
+    })
   }
+
+  function dobra() {
+    var novoVetor = vetor.map((elemento) => {
+      return elemento*2;
+    });
+
+    console.log(novoVetor);
+  }
+
   return (
     <div>
       <h1>Olá mundo!</h1>
       <h1>{frase}</h1>
       <Title></Title>
-      <button onClick={() => alertClick("Primeiro botão")}>Botão 1</button>
-      <button onClick={() => alertClick("Segundo botão")}> Botão 2</button>
+      {vetor[2]}
+      <button onClick = { () => clicou() }>Oi</button>
+      <button onClick = { () => dobra()}>Oi, novo vetor</button>
     </div>
   );
 }
