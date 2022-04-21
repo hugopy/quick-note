@@ -1,38 +1,30 @@
+import React from "react";
+import Membro from "./Membro";
+import Section from "./Section";
+
 function App() {
 
-  const pessoa = {
+  const Hugo = {
     nome: "Hugo",
-    idade: 19
+    idade: 19,
+    cargo: "Trainee"
   };
 
-  let chaves = Object.keys(pessoa);
-  console.log(chaves);
-
-  function imprime() {
-    chaves.forEach((elemento) => {
-      console.log(pessoa[elemento]);
-    });
-
-    console.log(pessoa);
-    pessoa.pets = ["Lulu", "Kate", "Marry"];
-    console.log(pessoa);
+  const Davi = {
+    nome: "Davi",
+    idade: 19,
+    cargo: "Servidor publico"
   }
 
   return (
     <div>
-      <h1>Olá {pessoa.nome}</h1>
-      <Title></Title>
-      {chaves}
-      <button onClick={() => {imprime()}}>Clique aqui!</button>
+      Olá mundo!
+      <Section title="Membros">
+        <Membro membro={Hugo}/>
+        <Membro membro={Davi}/>
+      </Section>
     </div>
   );
-}
-
-
-function Title() {
-  return(
-    <h1>Hello world!</h1>
-  )
 }
 
 export default App;
