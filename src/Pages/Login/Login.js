@@ -1,5 +1,8 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Login() {
-    return <h1>Login</h1>
+    return (
+        <Link to="/home">Clique para ir até a home!</Link>
+    );
 }

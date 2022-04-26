@@ -1,6 +1,4 @@
-import React, { useState } from "react";
-import Membro from "./Membro";
-import Section from "./Section";
+import React from "react";
 import Router from "./routes";
 
 function App() {
