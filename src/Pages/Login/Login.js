@@ -15,7 +15,7 @@ export default function Login() {
 
   return (
     <>
-      <Link to="/home">Clique para ir até a home!</Link>
+      <Link to="/temp">Clique para ir até a home!</Link>
       <div className="base">
         <div className="container">
           <h1>Quick Note</h1>

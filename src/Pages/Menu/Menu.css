@@ -1,0 +1,20 @@
+.drawer {
+    width: 260px;
+}
+
+.listItemText {
+    margin-left: 10px;
+}
+
+.userName {
+    color: black;
+    margin-right: 10px;
+    margin-top: 0.7em;
+    font-size: 1.1rem;
+}
+
+.userInfoContainer {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}

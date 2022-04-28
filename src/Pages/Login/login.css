@@ -1,7 +1,7 @@
 .container {
     display: flex;
     flex-direction: column;
-    max-width: 423px;
+    max-width: 423px !important;
     flex-grow: 1;
     text-align: center;
 }
@@ -18,5 +18,4 @@
     margin-right: 16px;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }

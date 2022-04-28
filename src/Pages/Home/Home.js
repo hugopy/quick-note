@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Membro from "../../Membro";
 import Section from "../../Section";
 
-export default function Home() {
+function Home() {
   const [membro, setMembro] = useState({});
   const [color, setColor] = useState();
   const [carrinho, setCarrinho] = useState([]);
@@ -128,3 +128,5 @@ export default function Home() {
     </div>
   );
 }
+
+export default Home;
